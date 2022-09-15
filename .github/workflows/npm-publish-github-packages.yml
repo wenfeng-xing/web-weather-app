@@ -31,7 +31,8 @@ jobs:
         with:
           node-version: 18
           registry-url: https://npm.pkg.github.com/
+      - uses: webfactory/ssh-agent@v0.5.4
+        with:
+          ssh-private-key: ${{ secrets.SSH_PRIVATE_KEY }}
       - run: npm ci
       - run: npm run publish
-        env:
-          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
