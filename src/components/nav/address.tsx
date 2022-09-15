@@ -15,7 +15,7 @@ interface AddressData {
 }
 
 const Address: React.FunctionComponent = () => {
-  const [address, setAddress] = React.useState("Montreal, Quebec");
+  const [address, setAddress] = React.useState("-");
 
   React.useEffect(() => {
     async function getLocation() {
