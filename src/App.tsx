@@ -8,7 +8,7 @@ function App() {
   console.log(import.meta.env);
   return (
     <div className="App">
-      <Grid container lg={12} rowGap={2}>
+      <Grid container rowGap={2}>
         <Grid container>
           <PrimarySearchAppBar />
         </Grid>
@@ -23,12 +23,14 @@ function App() {
           }}
         >
           <Grid
-            container
+            item
             lg={7.5}
             sx={{ bgcolor: "orangered", height: "95%", borderRadius: "15px" }}
-          ></Grid>
+          >
+            <h1>{import.meta.env.VITE_POSITION_STACK_TOKEN}</h1>
+          </Grid>
           <Grid
-            container
+            item
             lg={4}
             sx={{ bgcolor: "blue", height: "95%", borderRadius: "15px" }}
           ></Grid>
