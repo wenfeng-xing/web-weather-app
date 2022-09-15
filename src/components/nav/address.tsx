@@ -22,7 +22,7 @@ const Address: React.FunctionComponent = () => {
       const coords = await getCoordinates();
       const response = await fetch(`http://api.positionstack.com/v1/reverse?access_key=${import.meta.env.VITE_POSITION_STACK_TOKEN}&query=${coords.latitude},${coords.longitude}`)
       const data: AddressData = await response.json();
-
+      console.log("data", data);
       if (data.data[0].county && data.data[0].region) {
         setAddress(`${data.data[0].county}, ${data.data[0].region}`)
       }
