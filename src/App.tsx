@@ -27,7 +27,6 @@ function App() {
             lg={7.5}
             sx={{ bgcolor: "orangered", height: "95%", borderRadius: "15px" }}
           >
-            <h1>{import.meta.env.VITE_POSITION_STACK_TOKEN}</h1>
           </Grid>
           <Grid
             item
