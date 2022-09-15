@@ -5,6 +5,7 @@ import { Grid } from "@mui/material";
 import PrimarySearchAppBar from "./components/nav";
 
 function App() {
+  console.log(import.meta.env);
   return (
     <div className="App">
       <Grid container lg={12} rowGap={2}>
