@@ -35,11 +35,6 @@ function App() {
               <WeatherMap />
             </Grid>
           </Grid>
-          <Grid
-            item
-            lg={4}
-            sx={{ bgcolor: "blue", height: "95%", borderRadius: "15px" }}
-          ></Grid>
           <Grid item lg={4} sx={{ bgcolor: 'blue', height: '95%', borderRadius: '15px' }}></Grid>
         </Grid>
       </Grid>
