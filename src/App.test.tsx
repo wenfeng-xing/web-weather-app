@@ -4,11 +4,20 @@ import '@testing-library/jest-dom';
 
 import App from './App';
 
-jest.mock('./components/nav/address.tsx', () => {
+jest.mock('./components/nav/index.tsx', () => {
   return {
     __esModule: true,
     default: () => {
       return <p>address</p>;
+    },
+  };
+});
+
+jest.mock('./components/weather-map/index.tsx', () => {
+  return {
+    __esModule: true,
+    default: () => {
+      return <p>weather map</p>;
     },
   };
 });
