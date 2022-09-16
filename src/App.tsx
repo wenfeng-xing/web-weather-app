@@ -22,16 +22,14 @@ function App() {
 						borderRadius: '15px 15px 0px 0px',
 					}}
 				>
-					<Grid
-						container
-						lg={7.5}
-						gap={2}
-						sx={{ height: '95%', borderRadius: '15px' }}
-					>
-						<Grid item columnGap={2} lg={12} sx={{bgcolor: 'blue', height: '30%', borderRadius: '15px'}}>
-
-						</Grid>
-						<Grid item columnGap={2} lg={12} sx={{height: '68%', borderRadius: '25px'}}>
+					<Grid container lg={7.5} gap={2} sx={{ height: '95%', borderRadius: '15px' }}>
+						<Grid
+							item
+							columnGap={2}
+							lg={12}
+							sx={{ bgcolor: 'blue', height: '30%', borderRadius: '15px' }}
+						></Grid>
+						<Grid item columnGap={2} lg={12} sx={{ height: '68%', borderRadius: '25px' }}>
 							<WeatherMap />
 						</Grid>
 					</Grid>
