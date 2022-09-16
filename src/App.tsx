@@ -1,9 +1,9 @@
 import React from 'react'
 import './App.css'
 
-import { Grid } from '@mui/material'
-import PrimarySearchAppBar from './components/nav'
-
+import { Grid } from "@mui/material";
+import PrimarySearchAppBar from "./components/nav";
+import WeatherMap from "./components/weather-map"
 function App() {
   // console.log(import.meta.env);
   return (
@@ -23,9 +23,22 @@ function App() {
           }}
         >
           <Grid
-            item
+            container
             lg={7.5}
-            sx={{ bgcolor: 'orangered', height: '95%', borderRadius: '15px' }}
+            gap={2}
+            sx={{ height: "95%", borderRadius: "15px" }}
+          >
+            <Grid item columnGap={2} lg={12} sx={{bgcolor: "blue", height: "30%", borderRadius: "15px"}}>
+
+            </Grid>
+            <Grid item columnGap={2} lg={12} sx={{height: "68%", borderRadius: "25px"}}>
+              <WeatherMap />
+            </Grid>
+          </Grid>
+          <Grid
+            item
+            lg={4}
+            sx={{ bgcolor: "blue", height: "95%", borderRadius: "15px" }}
           ></Grid>
           <Grid item lg={4} sx={{ bgcolor: 'blue', height: '95%', borderRadius: '15px' }}></Grid>
         </Grid>
